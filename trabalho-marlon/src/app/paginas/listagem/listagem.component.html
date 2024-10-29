@@ -1,0 +1,9 @@
+<section *ngIf="herolist">
+    <div *ngFor="let hero of herolist">
+         <img src="{{hero?.images.lg}}" alt="">
+         <p>{{hero?.name | uppercase}}</p>
+    </div>
+ </section>
+ <section *ngIf="!herolist">
+     <p>carregando...</p>
+ </section>
