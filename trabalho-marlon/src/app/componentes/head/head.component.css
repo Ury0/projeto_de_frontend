@@ -1,3 +1,36 @@
-a{
-    margin: 10px;
+section {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+}
+
+a {
+    color: #ffffff; /* Texto branco */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.5s, border 0.3s;
+    border: none; /* Sem borda inicialmente */
+}
+
+a:hover {
+    color: #76ff7a; /* Texto verde ao passar o mouse */
+    border: 2px solid #3c3c3c; /* Borda cinza ao passar o mouse */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+a:active {
+    color: #faff70; /* Amarelo claro ao clicar */
+}
+
+a.router-link-active {
+    color: #ffffff; /* Volta para o branco quando a rota está ativa */
+    border: none; /* Sem borda ao clicar */
 }

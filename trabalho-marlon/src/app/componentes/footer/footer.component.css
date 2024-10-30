@@ -1,0 +1,35 @@
+section {
+    background-color: #1e1e1e;
+    border-top: 1px solid #3c3c3c;
+    padding: 1rem;
+    position: relative;
+    z-index: 1000; /* Certifique-se de que o rodapé fica acima do conteúdo */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d4d4d4;
+}
+
+.footer-left {
+    font-size: 0.9rem;
+}
+
+.footer-right a {
+    color: #007acc; /* Azul do VSCode */
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #ffffff;
+}
+
+.footer-right a:active {
+    color: #faff70; /* Amarelo claro ao clicar */
+}

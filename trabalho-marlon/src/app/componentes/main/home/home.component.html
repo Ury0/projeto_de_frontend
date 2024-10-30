@@ -1,1 +1,22 @@
-<p>home works!</p>
+<section class="home">
+    <div class="intro">
+      <h1>Bem-vindo ao Mundo dos Investimentos</h1>
+      <p>Aprenda sobre Renda Fixa e Renda Variável de forma interativa!</p>
+    </div>
+  
+    <div class="content">
+      <div class="card" (click)="toggleContent('rendaFixa')">
+        <h2>Renda Fixa</h2>
+        <p *ngIf="showRendaFixa">
+          Renda fixa são investimentos em que a rentabilidade é conhecida no momento da aplicação. Exemplos incluem CDBs, títulos públicos e debêntures.
+        </p>
+      </div>
+      <div class="card" (click)="toggleContent('rendaVariavel')">
+        <h2>Renda Variável</h2>
+        <p *ngIf="showRendaVariavel">
+          Renda variável são investimentos cuja rentabilidade pode variar de acordo com o mercado. Exemplos incluem ações, fundos imobiliários e ETFs.
+        </p>
+      </div>
+    </div>
+  </section>
+  
