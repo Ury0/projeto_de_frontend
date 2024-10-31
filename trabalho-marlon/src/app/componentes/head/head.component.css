@@ -1,7 +1,11 @@
 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1e1e1e;
     padding: 1rem;
     border-bottom: 1px solid #3c3c3c;
+    height: 30px;
 }
 
 nav {
@@ -9,6 +13,7 @@ nav {
     justify-content: space-around;
     border-radius: 5px;
     background-color: #0f0f0f;
+    width: 90%;
 }
 
 a {

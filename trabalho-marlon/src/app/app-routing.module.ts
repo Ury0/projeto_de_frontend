@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './componentes/main/home/home.component';
-import { PerfilComponent } from './componentes/main/perfil/perfil.component';
-import { CarteiraComponent } from './componentes/main/carteira/carteira.component';
+
+import { HomeComponent } from './paginas/home/home.component';
+import { PerfilComponent } from './paginas/perfil/perfil.component';
+import { CarteiraComponent } from './paginas/carteira/carteira.component';
 import { BuscadorComponent } from './paginas/buscador/buscador.component';
 import { ListagemComponent } from './paginas/listagem/listagem.component';
 

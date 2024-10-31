@@ -1,0 +1,54 @@
+
+a {
+  color: #d4d4d4;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #007acc;
+}
+
+main {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #3c3c3c;
+  margin: 0 auto;
+  max-width: 800px;
+  transition: background-color 0.3s;
+}
+
+section:hover {
+  background-color: #252526;
+}
+
+section h1 {
+  color: #76ff7a;
+  transition: color 0.3s;
+}
+
+section h2 {
+  color: #007acc;
+  transition: color 0.3s;
+}
+
+section p, section ul {
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li ul li {
+  margin-left: 1rem;
+}
+
+

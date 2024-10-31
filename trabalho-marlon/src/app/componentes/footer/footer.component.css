@@ -5,6 +5,7 @@ section {
     position: relative;
     z-index: 1000; /* Certifique-se de que o rodapé fica acima do conteúdo */
     width: 100%;
+    height: 15px;
 }
 
 .footer-content {
