@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './paginas/home/home.component';
 import { PerfilComponent } from './paginas/perfil/perfil.component';
 import { CarteiraComponent } from './paginas/carteira/carteira.component';
-import { BuscadorComponent } from './paginas/buscador/buscador.component';
 import { ListagemComponent } from './paginas/listagem/listagem.component';
+import { DashboardComponent } from './paginas/dashboard/dashboard.component';
 
 
 
@@ -13,8 +13,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path:'perfil', component: PerfilComponent},
   {path: 'carteira', component: CarteiraComponent},
-  {path: 'buscador', component: BuscadorComponent},
-  {path: 'listagem', component: ListagemComponent}
+  {path: 'listagem', component: ListagemComponent},
+  {path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({

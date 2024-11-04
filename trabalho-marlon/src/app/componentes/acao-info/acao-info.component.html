@@ -1,0 +1,30 @@
+<div *ngIf="acaoData" class="card-container">
+  <h2>Informações da Ação: {{ ticker }}</h2>
+  <p><strong>Moeda:</strong> {{ acaoData.currency }}</p>
+  <p><strong>Nome:</strong> {{ acaoData.name }}</p>
+  <p><strong>Nome Completo:</strong> {{ acaoData.longName }}</p>
+  <p><strong>Preço:</strong> {{ acaoData.price }}</p>
+  <p><strong>Intervalo Diário:</strong> {{ acaoData.dayRange }}</p>
+  <p><strong>Símbolo:</strong> {{ acaoData.symbol }}</p>
+  <p><strong>Variação do Mercado Regular:</strong> {{ acaoData.regularMarketChange }}</p>
+  <p><strong>Percentual de Variação do Mercado Regular:</strong> {{ acaoData.regularMarketChangePercent }}</p>
+  <p><strong>Horário do Mercado Regular:</strong> {{ acaoData.regularMarketTime }}</p>
+  <p><strong>Alta do Dia no Mercado Regular:</strong> {{ acaoData.regularMarketDayHigh }}</p>
+  <p><strong>Baixa do Dia no Mercado Regular:</strong> {{ acaoData.regularMarketDayLow }}</p>
+  <p><strong>Volume do Mercado Regular:</strong> {{ acaoData.regularMarketVolume }}</p>
+  <p><strong>Fechamento Anterior:</strong> {{ acaoData.regularMarketPreviousClose }}</p>
+  <p><strong>Abertura do Mercado Regular:</strong> {{ acaoData.regularMarketOpen }}</p>
+  <p><strong>Intervalo de 52 Semanas:</strong> {{ acaoData.fiftyTwoWeekRange }}</p>
+  <p><strong>Baixa de 52 Semanas:</strong> {{ acaoData.fiftyTwoWeekLow }}</p>
+  <p><strong>Alta de 52 Semanas:</strong> {{ acaoData.fiftyTwoWeekHigh }}</p>
+  <p><strong>Intervalo Utilizado:</strong> {{ acaoData.usedInterval }}</p>
+  <p><strong>Intervalo Utilizado:</strong> {{ acaoData.usedRange }}</p>
+
+
+  <p><strong>Relação Preço/Lucro:</strong> {{ acaoData.priceEarnings }}</p>
+  <p><strong>Lucro por Ação:</strong> {{ acaoData.earningsPerShare }}</p>
+  <img [src]="acaoData.logourl" alt="{{ acaoData.symbol }} logo">
+</div>
+<div *ngIf="!acaoData">
+  <p>Carregando dados...</p>
+</div>

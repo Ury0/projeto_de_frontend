@@ -1,0 +1,17 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Ocupa a altura total da janela */
+    padding: 20px;
+  }
+  
+  .dashboard-container app-lista-fundamentos {
+    width: 30%; /* Ajusta a largura conforme necessário */
+    margin-right: 20px;
+    overflow-y: auto; /* Permite rolagem no componente da lista */
+  }
+  
+  .dashboard-container app-acaoInfo {
+    flex: 1; /* Ocupa o espaço restante */
+  }
+  
+  

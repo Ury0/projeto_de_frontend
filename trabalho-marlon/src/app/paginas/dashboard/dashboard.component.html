@@ -1,0 +1,12 @@
+<app-head></app-head>
+<main>
+    <app-cotacao-moedas></app-cotacao-moedas>
+    <div class="dashboard-container">
+      <app-lista-fundamentos (tickerSelected)="handleTickerSelected($event)"></app-lista-fundamentos>
+      <app-acao-info [ticker]="selectedTicker" (historicalDataUpdated)="updateHistoricalData($event)"></app-acao-info>
+      <app-acao-histiory-graf [historicalData]="historicalData"></app-acao-histiory-graf>
+      
+      </div>
+      
+</main>
+<app-footer></app-footer>
