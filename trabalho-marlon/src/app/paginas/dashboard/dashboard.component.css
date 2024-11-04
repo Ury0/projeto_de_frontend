@@ -1,17 +1,54 @@
+/* Estilo para o cabeçalho */
+app-head {
+  display: block;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estilo para o contêiner principal */
+main {
+  display: block;
+  padding: 20px;
+}
+
+/* Estilo para o contêiner do dashboard */
 .dashboard-container {
-    display: flex;
-    height: 100vh; /* Ocupa a altura total da janela */
-    padding: 20px;
-  }
-  
-  .dashboard-container app-lista-fundamentos {
-    width: 30%; /* Ajusta a largura conforme necessário */
-    margin-right: 20px;
-    overflow-y: auto; /* Permite rolagem no componente da lista */
-  }
-  
-  .dashboard-container app-acaoInfo {
-    flex: 1; /* Ocupa o espaço restante */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Estilo para a lista de fundamentos */
+app-lista-fundamentos {
+  flex: 1;
+  min-width: 300px; /* Largura mínima para garantir boa visualização em telas menores */
+}
+
+/* Estilo para a informação da ação e gráfico */
+app-acao-info {
+  flex: 2;
+  min-width: 500px; /* Largura mínima para garantir boa visualização em telas menores */
+  display: flex;
+  flex-direction: column;
+}
+
+app-acao-history-graf {
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilo para o rodapé */
+app-footer {
+  display: block;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
   

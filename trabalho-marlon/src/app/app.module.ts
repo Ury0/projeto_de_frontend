@@ -3,9 +3,8 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 
 import { AppRoutingModule } from './app-routing.module';
-import { provideHttpClient } from '@angular/common/http';
-import { NgChartsModule } from 'ng2-charts';// Verifique se isso está correto
-
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { NgChartsModule } from 'ng2-charts';
 
 
 import { AppComponent } from './app.component';
@@ -39,20 +38,21 @@ import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-
     ListaFundamentosComponent,
     AcaoInfoComponent,
     AcaoHistoryGrafComponent,
-  
+    
     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgChartsModule,
     
     
     
   ],
   providers: [
     provideClientHydration(),
-    provideHttpClient()
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

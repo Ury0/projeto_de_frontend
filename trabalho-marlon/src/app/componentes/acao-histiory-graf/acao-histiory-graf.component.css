@@ -1,0 +1,13 @@
+app-acao-history-graf {
+    height: 500px; /* Altura fixa do componente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  app-acao-history-graf canvas {
+    height: 100% !important; /* Ajusta a altura do canvas para ocupar toda a altura do componente */
+    width: 100%; /* Ajusta a largura do canvas para ocupar toda a largura do componente */
+  }
+  
+  
