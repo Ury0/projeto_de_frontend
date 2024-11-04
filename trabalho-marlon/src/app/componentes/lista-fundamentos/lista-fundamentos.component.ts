@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { B3apiService } from '../../service/b3api.service';
-import { error } from 'console';
+
 
 @Component({
   selector: 'app-lista-fundamentos',
