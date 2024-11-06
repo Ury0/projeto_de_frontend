@@ -1,0 +1,30 @@
+/* Estilo global */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Cabeçalho fixo no topo */
+app-head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que fica sobre outros elementos */
+}
+
+/* Rodapé fixo no rodapé */
+app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que fica sobre outros elementos */
+}
+
+/* Ajuste para o conteúdo principal */
+router-outlet {
+    display: block;
+    padding-top: 30px;
+    background-color: black;
+    /* Ajuste conforme a altura do seu rodapé */
+}

@@ -1,0 +1,90 @@
+
+/* Estilo global */
+/* Estilo global */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+/* Cabeçalho fixo */
+header {
+  background-color: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #d4d4d4;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #007acc;
+}
+
+main {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+section h1 {
+  color: #76ff7a;
+}
+
+section h2 {
+  color: #007acc;
+}
+
+section p, section ul {
+  color: #d4d4d4;
+}
+
+/* Destaque para palavras-chave */
+strong {
+  color: #dcdcaa; /* Amarelo claro para destacar */
+}
+
+/* Footer fixo */
+footer {
+  background-color: #252526;
+  border-top: 1px solid #3c3c3c;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Efeitos interativos */
+section p, section ul {
+  transition: color 0.3s;
+}
+
+section p:hover, section ul:hover {
+  color: #ffffff;
+}

@@ -1,0 +1,15 @@
+<app-head></app-head>
+<main>
+    <section *ngIf="herolist">
+        <div class="card" *ngFor="let hero of herolist">
+            <img [src]="hero?.images.lg" alt="{{hero?.name}}">
+            <p>{{hero?.name | uppercase}}</p>
+        </div>
+    </section>
+    
+    <section *ngIf="!herolist">
+        <p>carregando...</p>
+    </section>
+</main>
+<app-footer></app-footer>
+

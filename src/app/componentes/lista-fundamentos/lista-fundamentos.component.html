@@ -1,0 +1,13 @@
+<div *ngIf="listaFundamentos.length > 0; else noData">
+  <h2>Lista de Fundamentus Disponíveis</h2>
+  <div class="vertical-bar" (scroll)="onScroll($event)">
+    <button class="card" *ngFor="let fundamentus of listaFundamentos" (click)="onTickerClick(fundamentus.ticker)"
+            [class.selected]="fundamentus.ticker === selectedTicker">
+      <div class="card-title">{{ fundamentus.ticker }}</div>
+      <div class="card-content">{{ fundamentus.name }}</div>
+    </button>
+  </div>
+</div>
+<ng-template #noData>
+  <p>Carregando dados...</p>
+</ng-template>
