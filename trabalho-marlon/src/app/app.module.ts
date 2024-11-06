@@ -21,6 +21,7 @@ import { DashboardComponent } from './paginas/dashboard/dashboard.component';
 import { ListaFundamentosComponent } from './componentes/lista-fundamentos/lista-fundamentos.component';
 import { AcaoInfoComponent } from './componentes/acao-info/acao-info.component';
 import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-histiory-graf.component';
+import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-
     ListaFundamentosComponent,
     AcaoInfoComponent,
     AcaoHistoryGrafComponent,
+    FormeLogInComponent,
     
     
     
