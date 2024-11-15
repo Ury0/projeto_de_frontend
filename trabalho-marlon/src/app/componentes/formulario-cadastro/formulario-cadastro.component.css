@@ -1,46 +1,30 @@
-/* Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-/* Estilos da Seção */
-section {
+.form-container {
     background-color: #ffffff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     width: 300px;
-}
-
-/* Estilos do Formulário */
-form {
+    margin: auto;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-}
-
-/* Estilos dos Labels */
-label {
+  }
+  
+  label {
     margin-bottom: 8px;
     font-weight: bold;
-}
-
-/* Estilos dos Inputs */
-input[type="text"],
-input[type="password"] {
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-/* Estilo do Botão de Envio */
-input[type="submit"] {
+  }
+  
+  button {
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -49,8 +33,13 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  button:not(:disabled):hover {
     background-color: #0056b3;
-}
+  }
+  
