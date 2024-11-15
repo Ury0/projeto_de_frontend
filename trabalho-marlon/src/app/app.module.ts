@@ -23,7 +23,7 @@ import { ListaFundamentosComponent } from './componentes/lista-fundamentos/lista
 import { AcaoInfoComponent } from './componentes/acao-info/acao-info.component';
 import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-histiory-graf.component';
 import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
-
+import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,7 @@ import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.com
     AcaoInfoComponent,
     AcaoHistoryGrafComponent,
     FormeLogInComponent,
-    FormularioCadastroComponent,
+    FormeCadastroComponent,
     
     
     

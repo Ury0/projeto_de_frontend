@@ -5,7 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ClientService {
+export class DbApiSequalizeExpressService {
+
   private apiUrl = 'http://localhost:3000/api/clients';
 
   constructor(private http: HttpClient) { }
@@ -35,3 +36,6 @@ export class ClientService {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }
+
+
+
