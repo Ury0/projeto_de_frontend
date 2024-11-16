@@ -1,0 +1,62 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos do Contêiner do Formulário */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos dos Rótulos */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilos dos Campos de Entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos do Botão de Envio */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos do Botão de Envio em Estado de Hover */
+button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Botão de Envio Desabilitado */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

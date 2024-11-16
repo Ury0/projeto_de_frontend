@@ -5,6 +5,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { NgChartsModule } from 'ng2-charts';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -21,6 +22,8 @@ import { DashboardComponent } from './paginas/dashboard/dashboard.component';
 import { ListaFundamentosComponent } from './componentes/lista-fundamentos/lista-fundamentos.component';
 import { AcaoInfoComponent } from './componentes/acao-info/acao-info.component';
 import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-histiory-graf.component';
+import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
+import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,8 @@ import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-
     ListaFundamentosComponent,
     AcaoInfoComponent,
     AcaoHistoryGrafComponent,
+    FormeLogInComponent,
+    FormeCadastroComponent,
     
     
     
@@ -46,7 +51,7 @@ import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-
     BrowserModule,
     AppRoutingModule,
     NgChartsModule,
-    
+    FormsModule
     
     
   ],
