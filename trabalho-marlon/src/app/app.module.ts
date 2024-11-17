@@ -22,17 +22,11 @@ import { DashboardComponent } from './paginas/dashboard/dashboard.component';
 import { ListaFundamentosComponent } from './componentes/lista-fundamentos/lista-fundamentos.component';
 import { AcaoInfoComponent } from './componentes/acao-info/acao-info.component';
 import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-histiory-graf.component';
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
+
 import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
 import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadastro.component';
 import { SettingComponent } from './componentes/setting/setting.component';
->>>>>>> Stashed changes
-=======
-import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
-import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadastro.component';
->>>>>>> 69c0be0025cd8492d440fa4e2c2edd4f74e4f728
+
 
 @NgModule({
   declarations: [
@@ -50,18 +44,11 @@ import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadas
     ListaFundamentosComponent,
     AcaoInfoComponent,
     AcaoHistoryGrafComponent,
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
+
     FormeLogInComponent,
     FormeCadastroComponent,
     SettingComponent,
->>>>>>> Stashed changes
-=======
-    FormeLogInComponent,
-    FormeCadastroComponent,
->>>>>>> 69c0be0025cd8492d440fa4e2c2edd4f74e4f728
-    
+
     
     
   ],
