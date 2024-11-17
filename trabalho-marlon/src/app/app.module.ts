@@ -21,6 +21,12 @@ import { DashboardComponent } from './paginas/dashboard/dashboard.component';
 import { ListaFundamentosComponent } from './componentes/lista-fundamentos/lista-fundamentos.component';
 import { AcaoInfoComponent } from './componentes/acao-info/acao-info.component';
 import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-histiory-graf.component';
+<<<<<<< Updated upstream
+=======
+import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
+import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadastro.component';
+import { SettingComponent } from './componentes/setting/setting.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -38,6 +44,12 @@ import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-
     ListaFundamentosComponent,
     AcaoInfoComponent,
     AcaoHistoryGrafComponent,
+<<<<<<< Updated upstream
+=======
+    FormeLogInComponent,
+    FormeCadastroComponent,
+    SettingComponent,
+>>>>>>> Stashed changes
     
     
     
