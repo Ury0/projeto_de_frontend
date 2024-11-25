@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-forme-log-in',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './forme-log-in.component.css'
 })
 export class FormeLogInComponent {
-
+  
+  logIn(Form: NgForm){
+        
+  }
 }

@@ -35,6 +35,10 @@ export class DbApiSequalizeExpressService {
   deleteClient(id: number): Observable<any> {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
+
+  logIn(){
+    
+  }
 }
 
 
