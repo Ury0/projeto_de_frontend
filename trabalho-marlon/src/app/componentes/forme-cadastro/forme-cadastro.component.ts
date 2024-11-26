@@ -5,7 +5,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-forme-cadastro',
   templateUrl: './forme-cadastro.component.html',
-  styleUrl: './forme-cadastro.component.css'
+  styleUrls: ['./forme-cadastro.component.css']
 })
 
 export class FormeCadastroComponent implements OnInit {
@@ -18,26 +18,27 @@ export class FormeCadastroComponent implements OnInit {
   }
 
   // Método para obter todos os clientes
-  getClients() {
+  getClients(): void {
     this.clientService.getClients().subscribe(
-      (data) => {
+      (data: any[]) => {
         this.clients = data;
       },
-      (error) => {
+      (error: any) => {
         console.error('Error:', error);
       }
     );
   }
 
   // Método para enviar o formulário de cadastro
-  cadastrar(form: NgForm) {
+  cadastrar(form: NgForm): void {
     this.clientService.addClient(form.value).subscribe(
-      response => {
+      (response: any) => {
         console.log('Success:', response);
         alert('Cadastro realizado com sucesso!');
         this.getClients(); // Atualiza a lista de clientes após adicionar um novo
+        form.resetForm(); // Reseta o formulário após o cadastro
       },
-      error => {
+      (error: any) => {
         console.error('Error:', error);
         alert('Erro ao cadastrar. Tente novamente.');
       }
@@ -45,14 +46,15 @@ export class FormeCadastroComponent implements OnInit {
   }
 
   // Método para atualizar um cliente
-  updateClient(id: number, form: NgForm) {
+  updateClient(id: number, form: NgForm): void {
     this.clientService.updateClient(id, form.value).subscribe(
-      response => {
+      (response: any) => {
         console.log('Success:', response);
         alert('Cliente atualizado com sucesso!');
         this.getClients(); // Atualiza a lista de clientes após a atualização
+        form.resetForm(); // Reseta o formulário após a atualização
       },
-      error => {
+      (error: any) => {
         console.error('Error:', error);
         alert('Erro ao atualizar. Tente novamente.');
       }
@@ -60,18 +62,17 @@ export class FormeCadastroComponent implements OnInit {
   }
 
   // Método para deletar um cliente
-  deleteClient(id: number) {
+  deleteClient(id: number): void {
     this.clientService.deleteClient(id).subscribe(
-      response => {
+      (response: any) => {
         console.log('Success:', response);
         alert('Cliente deletado com sucesso!');
         this.getClients(); // Atualiza a lista de clientes após a exclusão
       },
-      error => {
+      (error: any) => {
         console.error('Error:', error);
         alert('Erro ao deletar. Tente novamente.');
       }
     );
   }
 }
-

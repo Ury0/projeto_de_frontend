@@ -11,13 +11,14 @@ import { CadastroComponent } from './paginas/cadastro/cadastro.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: IndexComponent},
+  {path: '', component: IndexComponent},
   {path: 'cadastro', component: CadastroComponent},
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path:'perfil', component: PerfilComponent},
   {path: 'carteira', component: CarteiraComponent},
   {path: 'listagem', component: ListagemComponent},
   {path: 'dashboard', component: DashboardComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full'} // Redireciona para login por padrão
   
 ];
 
