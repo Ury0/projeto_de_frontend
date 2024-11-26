@@ -1,0 +1,21 @@
+<section class="button">
+    <button (click)="toggleMenu()">
+        <i class="fas fa-cog"></i>
+    </button>
+</section>
+<section class="menu" *ngIf="isMenuVisible">
+    <ul>
+        <li>
+            <a href="#">Link 1</a>
+        </li>
+        <li>
+            <a href="#">Link 2</a>
+        </li>
+        <li>
+            <a href="#">Link 3</a>
+        </li>
+        <li>
+            <a routerLink="/perfil">Perfil</a>
+        </li>
+    </ul>
+</section>
