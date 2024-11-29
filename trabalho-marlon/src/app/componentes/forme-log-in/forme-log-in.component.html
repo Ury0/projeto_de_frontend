@@ -1,11 +1,14 @@
 <section>
     <div>
         <form (ngSubmit)="onLogin(clientForm)" #clientForm="ngForm">
-            <label for="nome">email</label>
-            <input type="email" id="nome" placeholder="email">
+
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="email" name="email" ngModel required>
+
             <label for="senha">senha</label>
-            <input type="password" id="senha">
-            <input type="submit" value="login">
+            <input type="password" id="senha" name="senha" ngModel required>
+
+            <button type="submit" [disabled]="!clientForm.valid">login</button>
         </form>
     </div>
 </section>

@@ -40,7 +40,7 @@ input[type="password"] {
 }
 
 /* Estilo do Botão de Envio */
-input[type="submit"] {
+button {
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -51,6 +51,6 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #0056b3;
 }
