@@ -12,7 +12,7 @@ export class FormeLogInComponent {
   isLoggedIn: boolean = false;
   errorMessage: string = '';
 
-  private loginUrl = 'http://localhost:3000/api/'; // Substitua pela URL correta da sua API de login
+  private loginUrl = 'http://localhost:3000/api/login'; // Substitua pela URL correta da sua API de login
 
   constructor(private http: HttpClient, private router: Router) {} // Injetando o Router
 
