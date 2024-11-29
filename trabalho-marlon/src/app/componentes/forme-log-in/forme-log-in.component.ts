@@ -41,6 +41,7 @@ export class FormeLogInComponent {
         }
       },
       (error: any) => {
+        alert("email ou senha incorretos")
         console.error('Erro de login:', error);
         this.isLoggedIn = false;
 
