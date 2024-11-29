@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DbApiSequalizeExpressService } from '../../service/db-api-sequalize-express.service';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router'; // Importando o Router
 
 @Component({
   selector: 'app-forme-cadastro',
@@ -11,7 +12,7 @@ import { NgForm } from '@angular/forms';
 export class FormeCadastroComponent implements OnInit {
   clients: any[] = [];
 
-  constructor(private clientService: DbApiSequalizeExpressService) {}
+  constructor(private clientService: DbApiSequalizeExpressService, private router: Router) {}
 
   ngOnInit(): void {
     this.getClients();
@@ -37,6 +38,7 @@ export class FormeCadastroComponent implements OnInit {
         alert('Cadastro realizado com sucesso!');
         this.getClients(); // Atualiza a lista de clientes após adicionar um novo
         form.resetForm(); // Reseta o formulário após o cadastro
+        this.router.navigate(['/']);
       },
       (error: any) => {
         console.error('Error:', error);
