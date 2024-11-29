@@ -1,0 +1,41 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-bottom: 1px solid #3c3c3c;
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    width: 90%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.5s, border 0.3s;
+    border: none;
+}
+
+a:hover {
+    color: #76ff7a; 
+    border: 2px solid #3c3c3c; 
+    border-radius: 4px; 
+}
+
+a:active {
+    color: #faff70; 
+}
+
+a.router-link-active {
+    color: #ffffff;
+    border: none; 
+}

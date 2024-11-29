@@ -1,0 +1,66 @@
+<app-head></app-head>
+<main>
+  <div class="carteira-container">
+    <h1>Carteira Virtual</h1>
+
+    <div class="summary-cards">
+      <div class="card">
+        <h2>Economias</h2>
+        <p>{{ economias | currency: 'BRL' }}</p>
+      </div>
+      <div class="card">
+        <h2>Gastos</h2>
+        <p>{{ gastos | currency: 'BRL' }}</p>
+      </div>
+      <div class="card">
+        <h2>Investimentos</h2>
+        <p>{{ investimentos | currency: 'BRL' }}</p>
+      </div>
+    </div>
+
+    <div class="details-section">
+      <h2>Detalhes dos Investimentos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Ativo</th>
+            <th>Valor Investido</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let investimento of listaInvestimentos">
+            <td>{{ investimento.ativo }}</td>
+            <td>{{ investimento.valor | currency: 'BRL' }}</td>
+            <td>{{ investimento.data }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="details-section">
+      <h2>Detalhes dos Gastos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let gasto of listaGastos">
+            <td>{{ gasto.descricao }}</td>
+            <td>{{ gasto.valor | currency: 'BRL' }}</td>
+            <td>{{ gasto.data }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="remaining-money">
+      <h2>Saldo Disponível</h2>
+      <p>{{ saldoDisponivel | currency: 'BRL' }}</p>
+    </div>
+  </div>
+</main>

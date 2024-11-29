@@ -1,0 +1,15 @@
+<section *ngIf="cotaMoedalist">
+    <div class="bar" *ngFor="let moeda of cotaMoedalist | keyvalue">
+      <div class="bar-content">
+        <h3>{{ moeda.value.code }}</h3>
+        <h4>{{moeda.value.bid}}</h4>
+        <p>{{ moeda.value.varBid }} | ({{ moeda.value.pctChange }}%)</p>
+      </div>
+    </div>
+  </section>
+  
+  <section *ngIf="!cotaMoedalist">
+    <p>Carregando...</p>
+  </section>
+  
+  
