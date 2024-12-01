@@ -26,6 +26,7 @@ import { AcaoHistoryGrafComponent } from './componentes/acao-histiory-graf/acao-
 import { FormeLogInComponent } from './componentes/forme-log-in/forme-log-in.component';
 import { FormeCadastroComponent } from './componentes/forme-cadastro/forme-cadastro.component';
 import { SettingComponent } from './componentes/setting/setting.component';
+import { DiretivapersonalizadaDirective } from './directives/diretivapersonalizada.directive';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { SettingComponent } from './componentes/setting/setting.component';
     FormeLogInComponent,
     FormeCadastroComponent,
     SettingComponent,
+    DiretivapersonalizadaDirective,
 
     
     
