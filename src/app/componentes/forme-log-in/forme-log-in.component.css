@@ -34,7 +34,7 @@ label {
     color: #ffffff; 
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
     padding: 10px;
     margin-bottom: 15px;
@@ -45,7 +45,7 @@ input[type="password"] {
     font-size: 14px;
 }
 
-input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
     outline: none;
     border-color: #777777; 

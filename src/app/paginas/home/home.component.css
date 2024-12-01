@@ -60,7 +60,7 @@ section h1 {
 section h2 {
   font-size: 22px;
   margin-top: 20px;
-  color: #14851983; 
+  color: #15b2e283; 
 }
 
 section p {
@@ -91,13 +91,13 @@ section ul li ul li {
 }
 
 a {
-  color: #244d03;
+  color: #03324d;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #043d06;
+  color: #04303d;
 }
 table {
   width: 100%;

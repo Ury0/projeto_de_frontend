@@ -1,46 +1,24 @@
-section {
+/* Centraliza o componente <app-forme-cadastro> */
+main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem;
-    background-color: #333333;
-    color: #d4d4d4;
-}
- 
-.card {
-    background-color: #252526;
-    border: 1px solid #3c3c3c;
-    border-radius: 8px;
-    margin: 1rem;
+    align-items: center;
+    height: 100vh; /* Garante que o main ocupe a altura total da viewport */
+  }
+  
+  /* Posiciona o link "Log in" no canto superior direito */
+  header {
+    display: flex;
+    justify-content: flex-end;
     padding: 1rem;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #ff8800; /* Cor do link */
+  }
+  header a:hover{
+    color: aliceblue;
+  }
+  
 
-.card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-
-.card p {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-section p {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2rem;
-}
